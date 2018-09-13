@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".score"
+    android:background="@drawable/stars">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="377dp"
+        android:layout_height="358dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="377dp"
+            android:layout_height="77dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/roundNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="TextView"
+                android:textColor="@color/orange"
+                android:textSize="40sp"
+                app:fontFamily="cursive" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/firstTableRow"
+            android:layout_width="373dp"
+            android:layout_height="match_parent"
+            android:background="@color/pal">
+
+            <TextView
+                android:id="@+id/firstName"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:visibility="visible"
+                app:fontFamily="cursive" />
+
+            <EditText
+                android:id="@+id/firstSaid"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/firstDone"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/firstSum"
+                android:layout_width="83dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="SUM"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:visibility="visible"
+                app:fontFamily="cursive" />
+
+            <Button
+                android:id="@+id/firstOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/yellow"
+                android:text="@android:string/ok"
+                app:fontFamily="cursive" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/secondTableRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ksepal">
+
+            <TextView
+                android:id="@+id/secondName"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:fontFamily="cursive" />
+
+            <EditText
+                android:id="@+id/secondSaid"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/secondDone"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/secondSum"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="SUM"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:visibility="visible"
+                app:fontFamily="cursive" />
+
+            <Button
+                android:id="@+id/secondOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/yellow"
+                android:text="@android:string/ok"
+                app:fontFamily="cursive" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/thirdTableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pal">
+
+            <TextView
+                android:id="@+id/thirdName"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:fontFamily="cursive" />
+
+            <EditText
+                android:id="@+id/thirdSaid"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/thirdDone"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/thirdSum"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="SUM"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:visibility="visible"
+                app:fontFamily="cursive" />
+
+            <Button
+                android:id="@+id/thirdOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/yellow"
+                android:text="@android:string/ok"
+                app:fontFamily="cursive" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/forthTableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ksepal">
+
+            <TextView
+                android:id="@+id/forthName"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:fontFamily="cursive" />
+
+            <EditText
+                android:id="@+id/forthSaid"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/forthDone"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/forthSum"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="SUM"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:visibility="visible"
+                app:fontFamily="cursive" />
+
+            <Button
+                android:id="@+id/forthOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/yellow"
+                android:text="@android:string/ok"
+                app:fontFamily="cursive" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/fifthTableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pal">
+
+            <TextView
+                android:id="@+id/fifthName"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:fontFamily="cursive" />
+
+            <EditText
+                android:id="@+id/fifthSaid"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/fifthDone"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/fifthSum"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="SUM"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:visibility="visible"
+                app:fontFamily="cursive" />
+
+            <Button
+                android:id="@+id/fifthOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/yellow"
+                android:text="@android:string/ok"
+                app:fontFamily="cursive" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/sixthTableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ksepal">
+
+            <TextView
+                android:id="@+id/sixthName"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:fontFamily="cursive" />
+
+            <EditText
+                android:id="@+id/sixthSaid"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/sixthDone"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/sixthSum"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="SUM"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:visibility="visible"
+                app:fontFamily="cursive" />
+
+            <Button
+                android:id="@+id/sixthOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/yellow"
+                android:text="@android:string/ok"
+                app:fontFamily="cursive" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/editScore"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="EDIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextRoundButton"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.503"
+        android:backgroundTint="@color/purple"
+        app:fontFamily="cursive"/>
+
+    <Button
+        android:id="@+id/nextRoundButton"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="NEXT ROUND"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.496"
+        android:background="@color/red"
+        app:fontFamily="cursive"/>
+
+
+    <EditText
+        android:id="@+id/choiceNumber"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="1-6"
+        android:textColorHint="@color/purple"
+        android:textColor="@color/purple"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:singleLine="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editScore"
+        app:layout_constraintTop_toBottomOf="@+id/editScore" />
+
+    <EditText
+        android:id="@+id/newSumNumber"
+        android:layout_width="33dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:singleLine="true"
+        android:visibility="invisible"
+        android:imeOptions="actionDone"
+        android:hint="score"
+        android:textColorHint="@color/purple"
+        android:textColor="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editScore"
+        app:layout_constraintStart_toEndOf="@+id/choiceNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editScore" />
+
+</android.support.constraint.ConstraintLayout>

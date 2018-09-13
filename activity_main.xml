@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/wizard">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="374dp"
+        android:layout_height="310dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/firstNameInput"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/red"
+            android:hint="put here a name..."
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:visibility="invisible"
+            android:imeOptions="actionDone"/>
+
+        <EditText
+            android:id="@+id/secondNameInput"
+            android:textColorHint="@color/red"
+            android:hint="put here a name..."
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:visibility="invisible"
+            android:imeOptions="actionDone"/>
+
+        <EditText
+            android:id="@+id/thirdNameInput"
+            android:textColor="@color/black"
+            android:textColorHint="@color/red"
+            android:hint="put here a name..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:visibility="invisible"
+            android:imeOptions="actionDone"/>
+
+        <EditText
+            android:id="@+id/forthNameInput"
+            android:textColor="@color/black"
+            android:textColorHint="@color/red"
+            android:hint="put here a name..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:visibility="invisible"
+            android:imeOptions="actionDone"/>
+
+        <EditText
+            android:id="@+id/fifthNameInput"
+            android:textColor="@color/black"
+            android:textColorHint="@color/red"
+            android:hint="put here a name..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:visibility="invisible"
+            android:imeOptions="actionDone"/>
+
+        <EditText
+            android:id="@+id/sixthNameInput"
+            android:textColor="@color/black"
+            android:textColorHint="@color/red"
+            android:hint="put here a name..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:visibility="invisible"
+            android:imeOptions="actionDone"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/numberInput"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="3-6"
+        android:textSize="30sp"
+        android:textColorHint="@color/red"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <Button
+        android:id="@+id/completeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/red"
+        android:enabled="false"
+        android:text="COMPLETE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.893" />
+
+
+</android.support.constraint.ConstraintLayout>
